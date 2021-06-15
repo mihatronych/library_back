@@ -1,10 +1,10 @@
 {
-  "name": "back-library",
+  "name": "library_back",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
