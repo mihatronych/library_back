@@ -1,0 +1,26 @@
+const Router = require('express')
+const router = new Router()
+const authorRouter = require('./authorRouter')
+const publicationRouter = require('./publicationRouter')
+const publicatorRouter = require('./publicatorRouter')
+const markRouter = require('./markRouter')
+const themeRouter = require('./themeRouter')
+const topicRouter = require('./topicRouter')
+const languageRouter = require('./languageRouter')
+const dialectRouter = require('./dialectRouter')
+const typeRouter = require('./typeRouter')
+const regionRouter = require('./regionRouter')
+
+
+router.use('/author', authorRouter)
+router.use('/publication', publicationRouter)
+router.use('/publicator', publicatorRouter)
+router.use('/mark', markRouter)
+router.use('/theme', themeRouter)
+router.use('/topic', topicRouter)
+router.use('/language', languageRouter)
+router.use('/dialect', dialectRouter)
+router.use('/type', typeRouter)
+router.use('/region', regionRouter)
+
+module.exports = router
